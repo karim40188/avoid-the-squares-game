@@ -1,0 +1,39 @@
+
+
+
+.game{
+    width:400px;
+    height:550px;
+    border:1px solid black;
+    position:relative;
+    margin:auto;
+    top:50px;
+    overflow: hidden;
+}
+.player{
+    width:100px;
+    height:100px;
+    background-color:crimson;
+    position: absolute;
+    bottom:0;
+    left:100px;
+    
+}
+.block{
+    width:100px;
+    height:100px;
+    background-color:black;
+    position: absolute;
+    top:-100px;
+    left:100px;
+    animation: move 1s infinite;
+    -webkit-animation: move 1s infinite;
+}
+@keyframes move {
+    0%{
+        top:-100px;
+    }
+    100%{
+        top:600px;
+    }
+}
